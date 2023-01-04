@@ -1,0 +1,32 @@
+{
+  "name": "comp-on",
+  "version": "1.0.0",
+  "description": "comp-on back end",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeongmin39/COMP-ON.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jeongmin39/COMP-ON/issues"
+  },
+  "homepage": "https://github.com/Jeongmin39/COMP-ON#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "modulename": "^0.0.4",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "pug": "^3.0.2",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
