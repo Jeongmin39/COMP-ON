@@ -9,9 +9,9 @@ const models = require("./models")
 
 // get
 const indexRouter = require("./routes/index");
-// const communityRouter = require("./routes/community");
-// const ourmemoryRouter = require("./routes/ourmemory");
-// const musteatRouter = require("./routes/musteat");
+const communityRouter = require("./routes/community");
+const ourmemoryRouter = require("./routes/ourmemory");
+const musteatRouter = require("./routes/musteat");
 const projectRouter = require("./routes/project");
 
 // post
@@ -34,9 +34,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 // get
 app.use('/', indexRouter);
-// app.use('/community', communityRouter);
-// app.use('/ourmemory', ourmemoryRouter);
-// app.use('/musteat', musteatRouter);
+app.use('/community', communityRouter);
+app.use('/ourmemory', ourmemoryRouter);
+app.use('/musteat', musteatRouter);
 app.use('/project', projectRouter);
 
 // post
