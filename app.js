@@ -41,6 +41,7 @@ app.use('/community', communityRouter);
 app.use('/ourmemory', ourmemoryRouter);
 app.use('/musteat', musteatRouter);
 app.use('/project', projectRouter);
+app.use('/public', express.static('./public/'));
 
 // post
 app.use('/write', writeRouter);
