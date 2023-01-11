@@ -4,8 +4,11 @@ html
     body 
         h1 this is project page
         h2(name='year')= year
+        ul 
+            -for (var i = 0; i < data.length; i++)
+                -for(var key in data[i])
+                    li #{key}: #{data[i][key]}
+                br
         form(action='/write' method='get')
             p 
                 input(type='submit' value='추가')
-            p 
-                
