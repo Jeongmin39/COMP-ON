@@ -1,5 +1,71 @@
-doctype html 
-html
-    head 
-    body 
-        h1 index page
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width-device-width, initial-scale=1.0')
+  link(rel='stylesheet', href="../public/index.css")
+  title COMP ON
+// menu
+header
+  h1 COMP ON
+  link(href='https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&display=swap', rel='stylesheet')
+  nav.primary-navigation(role='navigation')
+    ul
+      li
+        a(href='/') Home
+      li
+        a(href='community') Chat
+      li
+        a(href='ourmemory') Our memory
+      li
+        a(href='musteat') Must eat
+      li
+        a(href='project') Project
+        ul
+          li
+            a(href='project/2017') 2017
+          li
+            a(href='project/2018') 2018
+          li
+            a(href='project/2019') 2019
+          li
+            a(href='project/2020') 2020
+          li
+            a(href='project/2021') 2021
+// slide
+#slider
+  input#slide1(type='radio', name='slider', checked='')
+  input#slide2(type='radio', name='slider')
+  input#slide3(type='radio', name='slider')
+  input#slide4(type='radio', name='slider')
+  #slides
+    #overflow
+      .inner
+        .slide.slide_1
+          img(src='./chat.png', width='1000')
+          //
+            <div class="slide-content">
+            <h2>Slide1</h2>
+            <p>Content for Slide 1</p>
+            </div>
+        .slide.slide_2
+          .slide-content
+            h2 Slide2
+            p Content for Slide 2
+        .slide.slide_3
+          .slide-content
+            h2 Slide3
+            p Content for Slide 3
+        .slide.slide_4
+          .slide-content
+            h2 Slide4
+            p Content for Slide 4
+  #controls
+    label(for='slide1')
+    label(for='slide2')
+    label(for='slide3')
+    label(for='slide4')
+  #bullets
+    label(for='label1')
+    label(for='label2')
+    label(for='label3')
+    label(for='label4')

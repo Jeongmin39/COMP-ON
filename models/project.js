@@ -1,27 +1,40 @@
 module.exports = (sequelize, DataTypes) =>{
     const write = sequelize.define('Write', {
-        title:{
-            field: 'title',
-            type: DataTypes.STRING(30),
+        site:{
+            field: 'site',
+            type: DataTypes.STRING(100),
             allowNull: false
         },
-        content: {
-            field: 'content',
-            type: DataTypes.STRING(300),
+        git: {
+            field: 'git',
+            type: DataTypes.STRING(100),
             allowNull: false
         },
-        count:{
-            field: 'count',
+        year:{
+            field: 'year',
             type: DataTypes.INTEGER,
             allowNull: false,
             defaultValue:0
-        }
+        },
+        created_at: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: sequelize.literal('now()'),
+        },
+        updated_at: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: sequelize.literal('now()'),
+        },
+
     }, {
         charset: 'utf8',
         collate: 'utf8_unicode_ci',
         underscored: true,
         freezeTableName: true,
-        tableName: 'write'
+        tableName: 'Write',
+        timestamps: true,
+        paranoid: true,
     });
     return write;
 };

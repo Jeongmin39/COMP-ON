@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Jeongmin39/COMP-ON#readme",
   "dependencies": {
+    "async": "^3.2.4",
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
     "http-errors": "^2.0.0",
@@ -24,7 +25,8 @@
     "morgan": "^1.10.0",
     "mysql2": "^2.3.3",
     "pug": "^3.0.2",
-    "sequelize": "^6.28.0"
+    "sequelize": "^6.28.0",
+    "sequelize-cli": "^6.5.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

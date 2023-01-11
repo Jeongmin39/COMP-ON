@@ -1,4 +1,11 @@
-doctype html
+doctype html 
 html 
-    body
+    head 
+    body 
         h1 this is project page
+        h2(name='year')= year
+        form(action='/write' method='get')
+            p 
+                input(type='submit' value='추가')
+            p 
+                

@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const path = require('path');
 
 const app = express();
-const {sequelize} = require("./models")
+const sequelize = require("./models").sequelize;
 
 // get
 const indexRouter = require("./routes/index");
@@ -30,6 +30,10 @@ sequelize.sync()
 // view engine
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
+
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: false}));
 
 // get
 app.use('/', indexRouter);
