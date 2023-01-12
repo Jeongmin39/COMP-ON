@@ -1,5 +1,52 @@
-doctype html 
-html 
-    head 
-    body 
-        h1 this is musteat page.
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
+  script(type='text/javascript', src='https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4nio6cotw7')
+  title COMP ON
+#map(style='width: 600px;height: 400px;')
+script.
+  var mapOptions = {
+  center: new naver.maps.LatLng(37.5049303,126.9571406),
+  zoom: 50
+  };
+  var dongjak = new naver.maps.LatLngBounds(
+  new naver.maps.LatLng(37.502848133, 126.947993764),
+  new naver.maps.LatLng(37.508971822, 126.963676922));
+  var map = new naver.maps.Map("map", {
+  minZoom: 15  , // 읍면동 레벨
+  maxBounds: dongjak,
+  });
+  var sw = new naver.maps.Marker({
+  map: map,
+  position: dongjak.getSW()
+  });
+  var ne = new naver.maps.Marker({
+  map: map,
+  position: dongjak.getNE()
+  });
+  var rect = new naver.maps.Rectangle({
+  strokeOpacity: 0,
+  strokeWeight: 0,
+  fillOpacity: 0.2,
+  fillColor: "#0067a3",
+  bounds: dongjak,
+  map: map
+  });
+  var logger = $('#logger');
+  var position = new naver.maps.LatLng(37.5049303,126.9571406);
+  var marker = new naver.maps.Marker({
+  position: position,
+  map: map
+  });
+  naver.maps.Event.addListener(map, 'click', function(e) {
+  marker.setPosition(e.coord);
+  });
+  naver.maps.Event.addListener(map, 'zoom_changed', function() {
+  logZoom(map.getZoom());
+  });
+  logZoom(map.getZoom());
+  function logZoom(zoom) {
+  logger.html('zoom:' + zoom);
+  }

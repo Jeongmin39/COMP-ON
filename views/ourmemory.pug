@@ -1,5 +1,90 @@
-doctype html 
-html 
-    head 
-    body 
-        h1 this is ourmemory page
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width-device-width, initial-scale=1.0')
+  link(rel='stylesheet', href='/public/ourmmr.css')
+  title COMP ON
+// menu
+header
+  h1 COMP ON
+  link(href='https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&display=swap', rel='stylesheet')
+  nav.primary-navigation(role='navigation')
+    ul
+      li
+        a(href='/') Home
+      li
+        a(href='community') Chat
+      li
+        a(href='ourmemory') Our memory
+      li
+        a(href='musteat') Must eat
+      li
+        a(href='project') Project
+        ul
+          li
+            a(href='project/2017') 2017
+          li
+            a(href='project/2018') 2018
+          li
+            a(href='project/2019') 2019
+          li
+            a(href='project/2020') 2020
+          li
+            a(href='project/2021') 2021
+// main contents
+.intro
+  h2 Team
+  h6 &#xC18C;&#xAC1C;&#xAE00;
+  ul.main_01
+    li
+      .profile_img
+        img(src='/public/profile01.jpg', width='260')
+      .contents1_bold &#xC724;&#xC7AC;&#xC120;
+      .contents01 font-end
+      .contents02
+        br
+        | &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xB9CC;&#xB098;&#xC11C; &#xBC18;&#xAC11;&#xC2B5;&#xB2C8;&#xB2E4;&#x1F60A;
+        br
+        | &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xADF8;&#xB3D9;&#xC548; &#xC218;&#xACE0;&#xD558;&#xC168;&#xC2B5;&#xB2C8;&#xB2E4;
+        br
+        | &#xC55E;&#xC73C;&#xB85C;&#xB3C4; &#xC798; &#xBD80;&#xD0C1;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4; &#xAC10;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;
+    li
+      .profile_img
+        img(src='/public/profile01.jpg', width='260')
+      .contents1_bold &#xD55C;&#xC815;&#xBBFC;
+      .contents01 font-end
+      .contents02 &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xB9CC;&#xB098;&#xC11C; &#xBC18;&#xAC11;&#xC2B5;&#xB2C8;&#xB2E4;&#x1F60A;
+    li
+      .profile_img
+        img(src='/public/profile01.jpg', width='260')
+      .contents1_bold &#xBC15;&#xC9C4;&#xC601;
+      .contents01 back-end
+      .contents02 &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xB9CC;&#xB098;&#xC11C; &#xBC18;&#xAC11;&#xC2B5;&#xB2C8;&#xB2E4;&#x1F60A;
+    li
+      .profile_img
+        img(src='/public/profile01.jpg', width='260')
+      .contents1_bold &#xC774;&#xBBFC;&#xC131;
+      .contents01 back-end
+      .contents02 &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xB9CC;&#xB098;&#xC11C; &#xBC18;&#xAC11;&#xC2B5;&#xB2C8;&#xB2E4;&#x1F60A;
+// gallery
+.stories
+  h2 Gallery
+  .container
+    .images
+      .imageFlex1
+        img(src='/public/5.jpg')
+        img(src='/public/4.jpg')
+        img(src='/public/7.jpg')
+    .images
+      .imageFlex2
+        img(src='/public/2.jpg')
+        img(src='/public/1.jpg')
+        img(src='/public/3.jpg')
+    .images
+      .imageFlex3
+        img(src='/public/8.jpg')
+        img(src='/public/6.jpg')
+footer
+  h6
+    | &#xB9CC;&#xB4E0;&#xC774; &#xC640;&#xB7EC;&#xC544;&#xB7EC;&#x314F;&#xC5B4;
+    | &#xC774;&#xBA54;&#xC77C; wofjioe#93203

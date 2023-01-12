@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title Document
+    body
+        h1 프로젝트 추가
+            form(action='/project' method='post')
+                p 
+                    input(type='text' name='year' placeholder='프로젝트 년도')
+                p
+                    input(type='text' name='site' placeholder='site 주소' )
+                p 
+                    input(type='text' name='git' placeholder='git 주소')
+                p
+                    input(type='submit')

@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const path = require('path');
 
 const app = express();
-const {sequelize} = require("./models")
+const sequelize = require("./models").sequelize;
 
 // get
 const indexRouter = require("./routes/index");
@@ -31,12 +31,17 @@ sequelize.sync()
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: false}));
+
 // get
 app.use('/', indexRouter);
 app.use('/community', communityRouter);
 app.use('/ourmemory', ourmemoryRouter);
 app.use('/musteat', musteatRouter);
 app.use('/project', projectRouter);
+app.use('/public', express.static('./public/'));
 
 // post
 app.use('/write', writeRouter);
