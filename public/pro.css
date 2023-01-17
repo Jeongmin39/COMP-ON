@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+   }
+   @font-face {
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+   
+h2 {
+    font-weight: 300;
+    line-height: inherit;
+}
+
+li {list-style: none;}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+
+/*------menu-------*/
+nav.primary-navigation {
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+nav.primary-navigation ul li {
+    list-style: none;
+    margin: 0 auto;
+    border-left: 2px solid rgb(177, 175, 175);
+    display: inline-block;
+    padding: 0 60px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'NanumBarunGothic';
+    font-weight: 100;
+}
+
+nav.primary-navigation ul li:nth-last-child(1) {
+    border-right: 2px solid rgb(177, 175, 175);
+}
+
+nav.primary-navigation li a {
+    color: rgb(177, 175, 175);
+    font-weight: lighter;
+}
+
+nav.primary-navigation li a:hover {
+    color: black;
+    font-weight: bold;
+    transition: all 0.1s ease;
+}
+
+nav.primary-navigation li:hover {
+    cursor: pointer;
+}
+
+a {text-decoration: none;}
+
+/*---contents_title--*/
+.contentsarea {
+    overflow: hidden;
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 30px 0 10px;
+}
+
+.contentsarea .contents_title {
+    padding: 25px 0;
+    margin: 0 auto 35px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 1px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    background-color: #2a2a2a;
+}
+
+.contentsarea .contents_title h2 {
+    color: rgb(209, 209, 209);
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.contentsarea .contents_title h2.no_line {
+    letter-spacing: 3px;
+}
+
+.contentsarea .contents_title h2 span {
+    display: inline-block;
+    margin: 0 8px;
+    width: 1px;
+    height: 27px;
+    transform: translateY(4px) rotate(15deg);
+    background: rgb(209, 209, 209);
+}
+
+.contentsarea .contents_title2 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: 'LeferiPoint-WhiteObliqueA';
+}
+
+.contentsarea .contents_title2 p {
+    color: rgb(209, 209, 209);
+    font-size: 17px;
+    font-weight: 200;
+}
+
+.contentsarea .contents_title2 .point {
+    margin-top: 30px;
+    font-size: 38px;
+    font-family: 'NanumBarunGothic', sans-serif;
+}
+
+
+/*--dropdown_list--*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.dropdown-label{
+  font-size : 12px;
+  margin : 10px;
+  font-weight : bold;
+  color : rgb(50, 50, 50);
+}
+
+.dropdown{
+  position : relative;
+  display : inline-block;
+}
+
+.dropbtn_icon{
+  font-family : 'Material Icons';
+}
+.dropbtn{
+  display : block;
+  border : 2px solid rgb(94, 94, 94);
+  border-radius : 4px;
+  background-color: #fcfcfc;
+  font-weight: 400;
+  color : rgb(124, 124, 124);
+  padding : 12px;
+  width :240px;
+  text-align: left;
+  cursor : pointer;
+  font-size : 12px;
+  z-index :1;
+  position : relative;
+}
+.dropdown-content{
+  display : none;
+  font-weight: 400;
+  background-color: #fcfcfc;
+  min-width : 240px;
+  border-radius: 8px;
+  height : 160px;
+  overflow : scroll;
+  box-shadow: 0px 0px 10px 3px rgba(190, 190, 190, 0.6);
+}
+.dropdown-content::-webkit-scrollbar{
+  width : 5px;
+  height : 10px;
+}
+.dropdown-content::-webkit-scrollbar-thumb{
+  border-radius : 2px;
+  background-color :rgb(194, 194, 194)
+}
+
+.dropdown-content div{
+  display : block;
+  text-decoration : none;
+  color : rgb(37, 37, 37);
+  font-size: 12px;
+  padding : 12px 20px;
+}
+.dropdown-content div:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+.dropdown-content.show{
+  display : block;
+}
+.division {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.division .contents_detail .dropdown,
+.dropup {
+    position: relative;
+    width: 300px;
+}
+
+.project_area .project_option {
+    margin-bottom: 50px; 
+    text-align: right;}
+
+.project_area .project_option .dropdown {
+    display: inline-block;}
+
+    .division .contents_detail .dropdown, .dropup {
+        position:relative; width: 250px;}
+
+    .division .contents_detail .dropdown > button {
+        padding: 0 30px 0 15px; 
+        width: 100%; 
+        height: 40px; 
+        color: #252525; 
+        font-size: 15px; 
+        text-align: left; 
+        border: 1px solid 
+        #d0d0d0; background: url('/static/sw/images/icon_arrow5.png') right 20px center no-repeat;}
+    .division .contents_detail .dropdown:hover > button {
+        border: 1px solid #000000;}
+
+    .division .contents_detail .dropdown-menu {
+        position:absolute; 
+        top:43px; 
+        left: 0;
+        Z-index:1000; 
+        display:none; 
+        width:100%; 
+        text-align:left; 
+        border: 1px solid #0099ff; 
+        background: #fff;}
+
+    .division .contents_detail .dropdown-menu > li {width: 100%; border-bottom: 1px solid #006eb7;}
+    .division .contents_detail .dropdown-menu > li:last-child {border-bottom: 0;}
+    .division .contents_detail .dropdown-menu > li > a {display:block; padding: 0 15px; line-height: 44px; white-space: nowrap;}
+    .division .contents_detail .open > .dropdown-menu {display:block}
+ 
+/* button */
+
+/*project_list*/
+.project_area2 .project_list>li dl dd .name {
+    position: relative;
+    right: inherit;
+    top: 0;
+    margin-top: 10px;
+    font-family: 'NanumBarunGothic';
+}
+
+.link {
+    position: relative;
+    right: inherit;
+    margin-right: 10px;
+    display: flex;
+    list-style: none;
+    float: right;
+  }
+  
+  .link a i {
+    color :black;
+    font-size: 30px;
+    padding: 1px;
+  }
+
+  .link a i:hover {
+    color: #636d6f;
+  }
+
+.project_area2 .project_list {
+    border-top: 1px solid #252525;
+}
+
+.project_area2 .project_list>li {
+    border-bottom: 1px solid #d0d0d0;
+    font-family: 'NanumBarunGothic';
+    padding-top: 4px;
+    margin-left: -40px;
+}
+
+.project_area2 .project_list>li:hover {
+    background: #f1fcff;
+}
+
+.project_area2 .project_list>li dl {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.project_area2 .project_list>li dl dt {
+    display: table-cell;
+    width: 140px;
+    text-align: center;
+    vertical-align: middle;
+    color: #525252;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    font-weight: bolder;
+}
+
+.project_area2 .project_list>li dl dt span {
+    font-size: 30px;
+}
+
+.project_area2 .project_list>li dl dd {
+    display: table-cell;
+    position: relative;
+    padding: 15px;
+}
+
+.project_area2 .project_list>li dl dd h3 {
+    margin-bottom: 5px;
+    color: #c90101;
+    font-size: 22px;
+}
+
+.project_area2 .project_list>li dl dd h4 {
+    margin-bottom: -10px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.project_area2 .project_list>li dl dd p {
+    color: #999;
+    font-size: 13px;
+}
+
+.project_area2 .project_list>li dl dd .name {
+    overflow: hidden;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+.project_area2 .project_list>li dl dd .name li {
+    float: left;
+    margin-right: 5px;
+    width: 80px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #d0d0d0;
+}
+
+  /*--footer*/
+  footer {
+    width: 100%;
+    background-color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  footer p{
+  margin-bottom: px;
+  font-size: 13px;
+  color: #949497;
+}
