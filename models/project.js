@@ -1,5 +1,10 @@
 module.exports = (sequelize, DataTypes) =>{
     const write = sequelize.define('Write', {
+        title:{
+            field: 'title',
+            type: DataTypes.STRING(100),
+            allowNull: false
+        },
         site:{
             field: 'site',
             type: DataTypes.STRING(100),

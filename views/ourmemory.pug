@@ -1,90 +1,151 @@
 doctype html
 head
   meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
   meta(name='viewport', content='width-device-width, initial-scale=1.0')
-  link(rel='stylesheet', href='/public/ourmmr.css')
+  link(rel='stylesheet', href='../public/ourmmr.css')
+  script(src='https://kit.fontawesome.com/d6e8faafbc.js', crossorigin='anonymous')
   title COMP ON
 // menu
 header
-  h1 COMP ON
-  link(href='https://fonts.googleapis.com/css2?family=Kanit:wght@700;800;900&display=swap', rel='stylesheet')
-  nav.primary-navigation(role='navigation')
-    ul
-      li
-        a(href='/') Home
-      li
-        a(href='community') Chat
-      li
-        a(href='ourmemory') Our memory
-      li
-        a(href='musteat') Must eat
-      li
-        a(href='project') Project
-        ul
-          li
-            a(href='project/2017') 2017
-          li
-            a(href='project/2018') 2018
-          li
-            a(href='project/2019') 2019
-          li
-            a(href='project/2020') 2020
-          li
-            a(href='project/2021') 2021
+  .logo(style='text-align: center')
+    a(href='/')
+      img(src='../public/comp on logo 3.png', title='COMP ON', style='width: 250px; margin-top: 30px')
+nav.primary-navigation(role='navigation')
+  ul
+    li
+      a(href='community') Chat
+    li
+      a(href='ourmemory') Our memory
+    li
+      a(href='musteat') Must eat
+    li
+      a(href='project') Project
 // main contents
 .intro
   h2 Team
+  hr(width='1%', color='black')
   h6 &#xC18C;&#xAC1C;&#xAE00;
   ul.main_01
     li
       .profile_img
-        img(src='/public/profile01.jpg', width='260')
+        img(src='../public/profile01.jpg', width='260', height='260')
       .contents1_bold &#xC724;&#xC7AC;&#xC120;
+      hr(width='3%', color='black')
       .contents01 font-end
       .contents02
+        | &#xB2E4;&#xB4E4; &#xBC14;&#xC05C; &#xC2DC;&#xAC04;&#xC744; &#xCABC;&#xAC1C; &#xD68C;&#xC758;&#xD558;&#xACE0; 
         br
-        | &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xB9CC;&#xB098;&#xC11C; &#xBC18;&#xAC11;&#xC2B5;&#xB2C8;&#xB2E4;&#x1F60A;
+        |                       &#xD65C;&#xB3D9;&#xC5D0; &#xC5F4;&#xC2EC;&#xD788; &#xCC38;&#xC5EC;&#xD558;&#xBA74;&#xC11C; 
         br
-        | &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xADF8;&#xB3D9;&#xC548; &#xC218;&#xACE0;&#xD558;&#xC168;&#xC2B5;&#xB2C8;&#xB2E4;
+        |                       &#xAC12;&#xC9C4; &#xACBD;&#xD5D8;&#xC744; &#xD560; &#xC218; &#xC788;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4; &#x1F60A;
         br
-        | &#xC55E;&#xC73C;&#xB85C;&#xB3C4; &#xC798; &#xBD80;&#xD0C1;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4; &#xAC10;&#xC0AC;&#xD569;&#xB2C8;&#xB2E4;
+        |                       &#xD55C; &#xD559;&#xAE30; &#xB3D9;&#xC548; &#xB108;&#xBB34;&#xB108;&#xBB34; &#xC218;&#xACE0;&#xD588;&#xACE0; 
+        br
+        |                       &#xC774; &#xC6F9;&#xC0AC;&#xC774;&#xD2B8;&#xAC00; &#xC5C6;&#xC5B4;&#xC9C0;&#xC9C0; &#xC54A;&#xAE38;... 
+        br
+        |                       &#xC990;&#xAC70;&#xC6E0;&#xC2B5;&#xB2C8;&#xB2E4;&#x2763;&#xFE0F;
+      ul.link
+        li.link_icon
+          a(href='https://github.com/YUNJAESEON', target='_blank', title='go github')
+            i.fa-brands.fa-square-github
+        li.link_icon
+          a(href='https://www.instagram.com/j_sunny_0207/', target='_blank')
+            i.fa-brands.fa-square-instagram
     li
       .profile_img
-        img(src='/public/profile01.jpg', width='260')
+        img(src='../public/profile02.jpg', width='260', height='260')
       .contents1_bold &#xD55C;&#xC815;&#xBBFC;
+      hr(width='3%', color='black')
       .contents01 font-end
-      .contents02 &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xB9CC;&#xB098;&#xC11C; &#xBC18;&#xAC11;&#xC2B5;&#xB2C8;&#xB2E4;&#x1F60A;
+      .contents02
+        | &#xC81C;&#xB300;&#xB85C; &#xD574;&#xBCF8; &#xC6F9;&#xD504;&#xB85C;&#xC81D;&#xD2B8;&#xB294; &#xCC98;&#xC74C;&#xC774;&#xB77C; 
+        br
+        |                       &#xACB0;&#xACFC;&#xB294; &#xBD80;&#xC871;&#xD558;&#xC9C0;&#xB9CC; &#xAC1C;&#xBC1C; &#xACFC;&#xC815;&#xC744; &#xD1B5;&#xD574; 
+        br
+        |                       &#xB9CE;&#xC774; &#xBC30;&#xC6B8; &#xC218; &#xC788;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4; :)
+        br
+        |                       &#xB098;&#xB984; &#xC804;&#xACF5;&#xC790;&#xC778;&#xB370; &#xD300;&#xC6D0;&#xB4E4;&#xC5D0;&#xAC8C; 
+        br
+        |                       &#xB3C4;&#xC6C0;&#xC774; &#xB418;&#xC9C0; &#xBABB; &#xD55C;&#xAC70; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4; 
+        br
+        |                       &#xB2E4;&#xB4E4; &#xBBF8;&#xC548; ! &#x314E;&#x314E;
+      ul.link
+        li.link_icon
+          a(href='https://github.com/Jeongmin39', target='_blank', title='go github')
+            i.fa-brands.fa-square-github
+        li.link_icon
+          a(href='https://www.instagram.com/jeongmin_one/', target='_blank')
+            i.fa-brands.fa-square-instagram
     li
       .profile_img
-        img(src='/public/profile01.jpg', width='260')
+        img(src='../public/profile03.jpg', width='260', height='260')
       .contents1_bold &#xBC15;&#xC9C4;&#xC601;
+      hr(width='3%', color='black')
       .contents01 back-end
-      .contents02 &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xB9CC;&#xB098;&#xC11C; &#xBC18;&#xAC11;&#xC2B5;&#xB2C8;&#xB2E4;&#x1F60A;
+      .contents02
+        | &#xAC1C;&#xBC1C; &#xACFC;&#xC815;&#xC774; &#xCC98;&#xC74C;&#xC774;&#xB77C;
+        br
+        |                       &#xC5B4;&#xB824;&#xC6B4; &#xBD80;&#xBD84;&#xC774; &#xB9CE;&#xC558;&#xC9C0;&#xB9CC;,
+        br
+        |                       &#xD300;&#xC6D0;&#xB4E4;&#xACFC; &#xAC19;&#xC774; &#xACF5;&#xBD80;&#xD558;&#xBA74;&#xC11C;
+        br
+        |                        &#xACB0;&#xACFC;&#xBB3C;&#xC744; &#xB9CC;&#xB4E4;&#xBA70;
+        br
+        |                        &#xB9CE;&#xC774; &#xBC30;&#xC6B8; &#xC218; &#xC788;&#xC5C8;&#xB358; &#xC2DC;&#xAC04;&#xC774;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;!
+        br
+        br
+      ul.link
+        li.link_icon
+          a(href='https://github.com/jinyoungpark00', target='_blank', title='go github')
+            i.fa-brands.fa-square-github
+        li.link_icon
+          a(href='https://www.instagram.com/b_gc0/', target='_blank')
+            i.fa-brands.fa-square-instagram
     li
       .profile_img
-        img(src='/public/profile01.jpg', width='260')
+        img(src='../public/profile04.jpg', width='260', height='260')
       .contents1_bold &#xC774;&#xBBFC;&#xC131;
+      hr(width='3%', color='black')
       .contents01 back-end
-      .contents02 &#xC548;&#xB155;&#xD558;&#xC138;&#xC694; &#xB9CC;&#xB098;&#xC11C; &#xBC18;&#xAC11;&#xC2B5;&#xB2C8;&#xB2E4;&#x1F60A;
+      .contents02
+        | &#xC2A4;&#xD130;&#xB514;&#xB97C; &#xC9C4;&#xD589;&#xD558;&#xBA70; &#xC548;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;&#xD588;&#xB358; &#xAC83;&#xB4E4;&#xC744;
+        br
+        |                       &#xC2E4;&#xC81C;&#xB85C; &#xC801;&#xC6A9;&#xD574;&#xBCF4;&#xB824;&#xACE0; &#xD558;&#xB2C8;
+        br
+        |                       &#xC798; &#xC791;&#xB3D9;&#xD558;&#xC9C0; &#xC54A;&#xC544; &#xC5B4;&#xB824;&#xC6C0;&#xC744; &#xACAA;&#xC5C8;&#xC73C;&#xB098;
+        br
+        | &#xD300;&#xC6D0;&#xB4E4;&#xACFC; &#xD568;&#xAED8; &#xADF9;&#xBCF5;&#xD558;&#xBA70;
+        br
+        |                       &#xB354; &#xB9CE;&#xC740; &#xAC83;&#xB4E4;&#xC744; &#xBC30;&#xC6B8; &#xC218; &#xC788;&#xC5C8;&#xB358; &#xC2DC;&#xAC04;&#xC774;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;! 
+        br
+        |                       &#xB2E4;&#xB4E4; &#xACE0;&#xC0DD;&#xB9CE;&#xC73C;&#xC168;&#xC2B5;&#xB2C8;&#xB2E4; &#x1F60A;
+        br
+      ul.link
+        li.link_icon
+          a(href='https://github.com/CenterEconLms', target='_blank', title='go github')
+            i.fa-brands.fa-square-github
+        li.link_icon
+          a(href='https://www.instagram.com/nnin_star/', target='_blank')
+            i.fa-brands.fa-square-instagram
 // gallery
 .stories
   h2 Gallery
+  hr(width='1%', color='black')
   .container
     .images
       .imageFlex1
-        img(src='/public/5.jpg')
-        img(src='/public/4.jpg')
-        img(src='/public/7.jpg')
+        img(src='../public/5.jpg')
+        img(src='../public/4.jpg')
+        img(src='../public/7.jpg')
     .images
       .imageFlex2
-        img(src='/public/2.jpg')
-        img(src='/public/1.jpg')
-        img(src='/public/3.jpg')
+        img(src='../public/2.jpg')
+        img(src='../public/1.jpg')
+        img(src='../public/3.jpg')
     .images
       .imageFlex3
-        img(src='/public/8.jpg')
-        img(src='/public/6.jpg')
+        img(src='../public/8.jpg')
+        img(src='../public/6.jpg')
 footer
-  h6
-    | &#xB9CC;&#xB4E0;&#xC774; &#xC640;&#xB7EC;&#xC544;&#xB7EC;&#x314F;&#xC5B4;
-    | &#xC774;&#xBA54;&#xC77C; wofjioe#93203
+  p copyright &#x24D2; 2023 All rights reserved by COMP ON

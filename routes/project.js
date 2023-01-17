@@ -25,11 +25,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 router.get(['/','/:year'], (req, res) =>{
     var year = req.params.year;
     if(!year){
-        connection.query("SELECT * FROM comp_on.write", (err, rows, fields) =>{
-            res.render('project', {year: year, data: rows});
+        connection.query("SELECT year, site, git FROM comp_on.write", (err, rows, fields) =>{
+            res.render('project', {year: 'all project', data: rows});
         });
     } else{
-        connection.query(`SELECT * FROM comp_on.write WHERE year=${year}`, (err, rows, fields) =>{
+        connection.query(`SELECT year, site, git FROM comp_on.write WHERE year=${year}`, (err, rows, fields) =>{
             res.render('project', {year: year, data: rows})
         })
     }

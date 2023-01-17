@@ -59,3 +59,8 @@ app.use((err, req, res, next) =>{
 app.listen(9000, ()=>{
     console.log('server connected 9000');
 });
+
+
+// 데이터 순서대로 정렬
+// 수정 삭제 버튼, 라우팅
+// 리스트 하나로 
