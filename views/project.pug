@@ -69,203 +69,199 @@ nav.primary-navigation(role='navigation')
     $(".cid_" + num).show();
     }
     }
-  // dropdown
-  .project_option
-    .dropdown.dropselect
-      button(type='button', data-toggle='dropdown', aria-expanded='true')
-        span.dropdown-label &#xAE30;&#xC218;&#xC120;&#xD0DD;
-  ul.dropdown-menu(role='menu')
-    li
-      a.dropselect-option(data-value='ssmenu1', href="javascript: selcid('all')", style='cursor: pointer') &#xAE30;&#xC218;&#xC804;&#xCCB4;
-    li
-      a.dropselect-option(data-value='ssmenu1', href='javascript: selcid(36)', style='cursor: pointer') 36&#xAE30;
-    li
-      a.dropselect-option(data-value='ssmenu1', href='javascript: selcid(35)', style='cursor: pointer') 35&#xAE30;
-    li
-      a.dropselect-option(data-value='ssmenu1', href='javascript: selcid(34)', style='cursor: pointer') 34&#xAE30;
-    li
-      a.dropselect-option(data-value='ssmenu1', href='javascript: selcid(33)', style='cursor: pointer') 33&#xAE30;
-form(action='/write' method='get')
-    input#add_project(type='submit', onclick='newPage()', value='+추가')
-    .project_area2
-    ul.project_list
-        li.cid_36
-        dl
-            dt
-            span 36
-            | &#xAE30;
-            dd
-            h3 COMP ON
-            h4
-                | &#xC6B0;&#xB9AC;&#xB9CC;&#xC758; &#xCEE4;&#xBBA4;&#xB2C8;&#xD2F0;, COMP ON
-            p
-            ul.name
-                li &#xBC15;&#xC9C4;&#xC601;
-                li &#xC724;&#xC7AC;&#xC120;
-                li &#xC774;&#xBBFC;&#xC131;
-                li &#xD55C;&#xC815;&#xBBFC;
-            ul.link
-                li.link_icon
-                a(href='https://github.com/Jeongmin39/COMP-ON', target='_blank', title='go github')
-                    i.fa-brands.fa-square-github
-                a(href='https://trite-hippodraco-90c.notion.site/COMP-M-7ad83a56f20f4990a673f931b7147e44', target='_blank')
-                    img(src='../public/notion_logo.png', title='go notion', style='width: 37px;margin-bottom: -8px; margin-left: -4px;')
-        li.cid_36
-        dl
-            dt
-            span 36
-            | &#xAE30;
-            dd
-            h3 &#xD544;&#xB4DC;
-            h4 &#xB300;&#xD559;&#xC0DD; &#xD544;&#xAE30;&#xACF5;&#xC720; &#xC11C;&#xBE44;&#xC2A4;
-            p
-            ul.name
-                li &#xACE0;&#xBBFC;&#xC9C0;
-                li &#xAE40;&#xBA85;&#xC900;
-                li &#xAE40;&#xC815;&#xD604;
-                li &#xD55C;&#xC724;&#xD638;
-            ul.link
-                li.link_icon
-                a(href='https://github.com/Jeongmin39/COMP-ON', target='_blank', title='go github')
-                    i.fa-brands.fa-square-github
-                a(href='https://trite-hippodraco-90c.notion.site/COMP-M-7ad83a56f20f4990a673f931b7147e44', target='_blank')
-                    img(src='../public/notion_logo.png', title='go notion', style='width: 37px;margin-bottom: -8px; margin-left: -4px;')
-        li.cid_36
-        dl
-            dt
-            span 36
-            | &#xAE30;
-            dd
-            h3 CAUNOTIFY
-            h4
-                | &#xB2E4;&#xC591;&#xD55C; &#xC911;&#xC559;&#xB300; &#xAC8C;&#xC2DC;&#xD310;&#xC744; &#xCD94;&#xD569;&#xD558;&#xC5EC; &#xC0C8;&#xB85C;&#xC6B4; &#xC815;&#xBCF4;&#xB97C; &#xC54C;&#xB78C;&#xC73C;&#xB85C; &#xBCF4;&#xB0B4;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.
-            p
-            ul.name
-                li &#xAE40;&#xC2B9;&#xBC94;
-                li &#xB098;&#xC0C1;&#xD604;
-                li &#xC2E0;&#xC8FC;&#xC601;
-                li &#xC774;&#xCC44;&#xC5F0;
-            ul.link
-                li.link_icon
-                a(href='https://github.com/Jeongmin39/COMP-ON', target='_blank', title='go github')
-                    i.fa-brands.fa-square-github
-                a(href='https://trite-hippodraco-90c.notion.site/COMP-M-7ad83a56f20f4990a673f931b7147e44', target='_blank')
-                    img(src='../public/notion_logo.png', title='go notion', style='width: 37px;margin-bottom: -8px; margin-left: -4px;')
-        li.cid_35
-        dl
-            dt
-            span 35
-            | &#xAE30;
-            dd
-            h3 &#xC560;&#xCC3D;&#xACE1; &#xB178;&#xD2B8;
-            h4 &#xB178;&#xB798;&#xBC29; &#xB178;&#xB798; &#xAE30;&#xB85D; &#xBC0F; &#xAD00;&#xB9AC;
-            p
-            ul.name
-                li &#xAE40;&#xD0DC;&#xD604;
-                li &#xC1A1;&#xC218;&#xD5CC;
-                li &#xCC9C;&#xC218;&#xD658;
-        li.cid_35
-        dl
-            dt
-            span 35
-            | &#xAE30;
-            dd
-            h3 &#xC5B8;&#xC81C;&#xB9CC;&#xB098;
-            h4 &#xC57D;&#xC18D; &#xC2DC;&#xAC04;&#xC744; &#xAC04;&#xD3B8;&#xD558;&#xAC8C;, &#xC77C;&#xC815;&#xAD00;&#xB9AC; &#xC624;&#xCF00;&#xC2A4;&#xD2B8;&#xB808;&#xC774;&#xC158; &#xC11C;&#xBE44;&#xC2A4;
-            p
-            ul.name
-                li &#xC774;&#xC601;&#xC11D;
-                li &#xD604;&#xC131;&#xD658;
-        li.cid_35
-        dl
-            dt
-            span 35
-            | &#xAE30;
-            dd
-            h3 &#xC624;&#xB514;( ODI )
-            h4 &#xC2A4;&#xB9C8;&#xD2B8; &#xC815;&#xBCF4; &#xACF5;&#xC720; &#xC624;&#xD508;&#xCC44;&#xD305; &#xD50C;&#xB7AB;&#xD3FC;
-            p
-            ul.name
-                li &#xBC31;&#xB0A8;&#xC8FC;
-                li &#xC774;&#xD76C;&#xB3C4;
-                li &#xD64D;&#xC9C4;&#xC6B0;
-        li.cid_34
-        dl
-            dt
-            span 34
-            | &#xAE30;
-            dd
-            h3 &#xC9C0;&#xBBF8;
-            h4 &#xC77C;&#xC0C1;&#xC5D0;&#xC11C; &#xC2DC;&#xC791;&#xD558;&#xB294; &#xC9C0;&#xAD6C;&#xC9C0;&#xD0B4;&#xC774;
-            p
-            ul.name
-                li &#xAE40;&#xAC74;&#xD6C8;
-                li &#xC815;&#xBBFC;&#xD601;
-                li &#xC870;&#xC6A9;&#xD658;
-        li.cid_34
-        dl
-            dt
-            span 34
-            | &#xAE30;
-            dd
-            h3 N&#xBE75;
-            h4 &#xC8FC;&#xBCC0; &#xC774;&#xC6C3;&#xB4E4;&#xACFC; &#xBB3C;&#xAC74;&#xC744; &#xAC19;&#xC774; &#xC0B4; &#xC218; &#xC788;&#xB294; &#xC18C;&#xBD84;&#xAC70;&#xB798; &#xD50C;&#xB7AB;&#xD3FC;
-            p
-            ul.name
-                li &#xAC15;&#xD61C;&#xC5F0;
-                li &#xAD8C;&#xD0DC;&#xD604;
-                li &#xC11C;&#xCC44;&#xC740;
-        li.cid_34
-        dl
-            dt
-            span 34
-            | &#xAE30;
-            dd
-            h3 Pleon
-            h4 &#xBC18;&#xB824;&#xC2DD;&#xBB3C; &#xAD50;&#xAC10; &#xC5B4;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;
-            p
-            ul.name
-                li &#xBC15;&#xC720;&#xB77C;
-                li &#xCC28;&#xC900;&#xD601;
-                li &#xCD5C;&#xBBFC;&#xC900;
-        li.cid_33
-        dl
-            dt
-            span 33
-            | &#xAE30;
-            dd
-            h3 &#xB354;&#xD3FC;(The Form)
-            h4 &#xADC0;&#xCC2E;&#xC740; &#xBAA8;&#xB4E0; &#xD3FC;&#xC744; &#xB300;&#xC2E0;&#xD558;&#xB294; &#xB354; &#xD3FC;&#xB098;&#xB294; &#xC124;&#xBB38;&#xC870;&#xC0AC; &#xD50C;&#xB7AB;&#xD3FC;
-            p
-            ul.name
-                li &#xD55C;&#xC2B9;&#xC6B1;
-                li &#xAD8C;&#xC900;&#xD638;
-                li &#xC2E0;&#xB3D9;&#xB158;
-        li.cid_33
-        dl
-            dt
-            span 33
-            | &#xAE30;
-            dd
-            h3 &#xB9DE;&#xCDA4;&#xBD84;&#xC591;&#xD544;&#xD130;
-            h4 &#xC8FC;&#xD0DD; &#xBD84;&#xC591; &#xC815;&#xBCF4; &#xC81C;&#xACF5; &#xC11C;&#xBE44;&#xC2A4;
-            p
-            ul.name
-                li &#xD568;&#xCD08;&#xB86C;
-                li &#xAE40;&#xC9C4;&#xC601;
-                li &#xC9C4;&#xC720;&#xC9C4;
-        li.cid_33
-        dl
-            dt
-            span 33
-            | &#xAE30;
-            dd
-            h3 BiDi
-            h4 V2O(Virtual to Offline) &#xC2A4;&#xD0C0;&#xC77C;&#xB9C1; &#xD50C;&#xB7AB;&#xD3FC;
-            p
-            ul.name
-                li &#xAE40;&#xB3D9;&#xD604;
-                li &#xAE40;&#xC7A5;&#xC601;
-                li &#xC131;&#xC778;&#xADDC;
+  .project_area
+    .project_option
+      .dropdown
+        button.dropdown-btn(onclick='dp_menu()')
+          | &#xAE30;&#xC218;&#xC120;&#xD0DD;
+          i.fa-solid.fa-angle-down
+        .dropdown-submenu
+          a(href='#none') &#xAE30;&#xC218;&#xC804;&#xCCB4;
+          a(href='#none') 36&#xAE30;
+          a(href='#none') 35&#xAE30;
+          a(href='#none') 34&#xAE30;
+          a(href='#none') 33&#xAE30;
+form(action='/write', method='get')
+  input#add_project(type='submit', onclick='newPage()', value='+추가')
+.project_area2
+  ul.project_list
+    li.cid_36
+      dl
+        dt
+          span 36
+          | &#xAE30;
+        dd
+          h3 COMP ON
+          h4
+            | &#xC6B0;&#xB9AC;&#xB9CC;&#xC758; &#xCEE4;&#xBBA4;&#xB2C8;&#xD2F0;, COMP ON
+          p
+          ul.name
+            li &#xBC15;&#xC9C4;&#xC601;
+            li &#xC724;&#xC7AC;&#xC120;
+            li &#xC774;&#xBBFC;&#xC131;
+            li &#xD55C;&#xC815;&#xBBFC;
+          ul.link
+            li.link_icon
+              a(href='https://github.com/Jeongmin39/COMP-ON', target='_blank', title='go github')
+                i.fa-brands.fa-square-github
+              a(href='https://trite-hippodraco-90c.notion.site/COMP-M-7ad83a56f20f4990a673f931b7147e44', target='_blank')
+                img(src='../public/notion_logo.png', title='go notion', style='width: 37px;margin-bottom: -8px; margin-left: -4px;')
+    li.cid_36
+      dl
+        dt
+          span 36
+          | &#xAE30;
+        dd
+          h3 &#xD544;&#xB4DC;
+          h4 &#xB300;&#xD559;&#xC0DD; &#xD544;&#xAE30;&#xACF5;&#xC720; &#xC11C;&#xBE44;&#xC2A4;
+          p
+          ul.name
+            li &#xACE0;&#xBBFC;&#xC9C0;
+            li &#xAE40;&#xBA85;&#xC900;
+            li &#xAE40;&#xC815;&#xD604;
+            li &#xD55C;&#xC724;&#xD638;
+          ul.link
+            li.link_icon
+              a(href='https://github.com/Jeongmin39/COMP-ON', target='_blank', title='go github')
+                i.fa-brands.fa-square-github
+              a(href='https://trite-hippodraco-90c.notion.site/COMP-M-7ad83a56f20f4990a673f931b7147e44', target='_blank')
+                img(src='../public/notion_logo.png', title='go notion', style='width: 40px;margin-bottom: -8px; margin-left: -4px;')
+    li.cid_36
+      dl
+        dt
+          span 36
+          | &#xAE30;
+        dd
+          h3 CAUNOTIFY
+          h4
+            | &#xB2E4;&#xC591;&#xD55C; &#xC911;&#xC559;&#xB300; &#xAC8C;&#xC2DC;&#xD310;&#xC744; &#xCD94;&#xD569;&#xD558;&#xC5EC; &#xC0C8;&#xB85C;&#xC6B4; &#xC815;&#xBCF4;&#xB97C; &#xC54C;&#xB78C;&#xC73C;&#xB85C; &#xBCF4;&#xB0B4;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.
+          p
+          ul.name
+            li &#xAE40;&#xC2B9;&#xBC94;
+            li &#xB098;&#xC0C1;&#xD604;
+            li &#xC2E0;&#xC8FC;&#xC601;
+            li &#xC774;&#xCC44;&#xC5F0;
+          ul.link
+            li.link_icon
+              a(href='https://github.com/Jeongmin39/COMP-ON', target='_blank', title='go github')
+                i.fa-brands.fa-square-github
+              a(href='https://trite-hippodraco-90c.notion.site/COMP-M-7ad83a56f20f4990a673f931b7147e44', target='_blank')
+                img(src='../public/notion_logo.png', title='go notion', style='width: 40px;margin-bottom: -8px; margin-left: -4px;')
+    li.cid_35
+      dl
+        dt
+          span 35
+          | &#xAE30;
+        dd
+          h3 &#xC560;&#xCC3D;&#xACE1; &#xB178;&#xD2B8;
+          h4 &#xB178;&#xB798;&#xBC29; &#xB178;&#xB798; &#xAE30;&#xB85D; &#xBC0F; &#xAD00;&#xB9AC;
+          p
+          ul.name
+            li &#xAE40;&#xD0DC;&#xD604;
+            li &#xC1A1;&#xC218;&#xD5CC;
+            li &#xCC9C;&#xC218;&#xD658;
+    li.cid_35
+      dl
+        dt
+          span 35
+          | &#xAE30;
+        dd
+          h3 &#xC5B8;&#xC81C;&#xB9CC;&#xB098;
+          h4 &#xC57D;&#xC18D; &#xC2DC;&#xAC04;&#xC744; &#xAC04;&#xD3B8;&#xD558;&#xAC8C;, &#xC77C;&#xC815;&#xAD00;&#xB9AC; &#xC624;&#xCF00;&#xC2A4;&#xD2B8;&#xB808;&#xC774;&#xC158; &#xC11C;&#xBE44;&#xC2A4;
+          p
+          ul.name
+            li &#xC774;&#xC601;&#xC11D;
+            li &#xD604;&#xC131;&#xD658;
+    li.cid_35
+      dl
+        dt
+          span 35
+          | &#xAE30;
+        dd
+          h3 &#xC624;&#xB514;( ODI )
+          h4 &#xC2A4;&#xB9C8;&#xD2B8; &#xC815;&#xBCF4; &#xACF5;&#xC720; &#xC624;&#xD508;&#xCC44;&#xD305; &#xD50C;&#xB7AB;&#xD3FC;
+          p
+          ul.name
+            li &#xBC31;&#xB0A8;&#xC8FC;
+            li &#xC774;&#xD76C;&#xB3C4;
+            li &#xD64D;&#xC9C4;&#xC6B0;
+    li.cid_34
+      dl
+        dt
+          span 34
+          | &#xAE30;
+        dd
+          h3 &#xC9C0;&#xBBF8;
+          h4 &#xC77C;&#xC0C1;&#xC5D0;&#xC11C; &#xC2DC;&#xC791;&#xD558;&#xB294; &#xC9C0;&#xAD6C;&#xC9C0;&#xD0B4;&#xC774;
+          p
+          ul.name
+            li &#xAE40;&#xAC74;&#xD6C8;
+            li &#xC815;&#xBBFC;&#xD601;
+            li &#xC870;&#xC6A9;&#xD658;
+    li.cid_34
+      dl
+        dt
+          span 34
+          | &#xAE30;
+        dd
+          h3 N&#xBE75;
+          h4 &#xC8FC;&#xBCC0; &#xC774;&#xC6C3;&#xB4E4;&#xACFC; &#xBB3C;&#xAC74;&#xC744; &#xAC19;&#xC774; &#xC0B4; &#xC218; &#xC788;&#xB294; &#xC18C;&#xBD84;&#xAC70;&#xB798; &#xD50C;&#xB7AB;&#xD3FC;
+          p
+          ul.name
+            li &#xAC15;&#xD61C;&#xC5F0;
+            li &#xAD8C;&#xD0DC;&#xD604;
+            li &#xC11C;&#xCC44;&#xC740;
+    li.cid_34
+      dl
+        dt
+          span 34
+          | &#xAE30;
+        dd
+          h3 Pleon
+          h4 &#xBC18;&#xB824;&#xC2DD;&#xBB3C; &#xAD50;&#xAC10; &#xC5B4;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;
+          p
+          ul.name
+            li &#xBC15;&#xC720;&#xB77C;
+            li &#xCC28;&#xC900;&#xD601;
+            li &#xCD5C;&#xBBFC;&#xC900;
+    li.cid_33
+      dl
+        dt
+          span 33
+          | &#xAE30;
+        dd
+          h3 &#xB354;&#xD3FC;(The Form)
+          h4 &#xADC0;&#xCC2E;&#xC740; &#xBAA8;&#xB4E0; &#xD3FC;&#xC744; &#xB300;&#xC2E0;&#xD558;&#xB294; &#xB354; &#xD3FC;&#xB098;&#xB294; &#xC124;&#xBB38;&#xC870;&#xC0AC; &#xD50C;&#xB7AB;&#xD3FC;
+          p
+          ul.name
+            li &#xD55C;&#xC2B9;&#xC6B1;
+            li &#xAD8C;&#xC900;&#xD638;
+            li &#xC2E0;&#xB3D9;&#xB158;
+    li.cid_33
+      dl
+        dt
+          span 33
+          | &#xAE30;
+        dd
+          h3 &#xB9DE;&#xCDA4;&#xBD84;&#xC591;&#xD544;&#xD130;
+          h4 &#xC8FC;&#xD0DD; &#xBD84;&#xC591; &#xC815;&#xBCF4; &#xC81C;&#xACF5; &#xC11C;&#xBE44;&#xC2A4;
+          p
+          ul.name
+            li &#xD568;&#xCD08;&#xB86C;
+            li &#xAE40;&#xC9C4;&#xC601;
+            li &#xC9C4;&#xC720;&#xC9C4;
+    li.cid_33
+      dl
+        dt
+          span 33
+          | &#xAE30;
+        dd
+          h3 BiDi
+          h4 V2O(Virtual to Offline) &#xC2A4;&#xD0C0;&#xC77C;&#xB9C1; &#xD50C;&#xB7AB;&#xD3FC;
+          p
+          ul.name
+            li &#xAE40;&#xB3D9;&#xD604;
+            li &#xAE40;&#xC7A5;&#xC601;
+            li &#xC131;&#xC778;&#xADDC;
 footer
   p copyright &#x24D2; 2023 All rights reserved by COMP ON
